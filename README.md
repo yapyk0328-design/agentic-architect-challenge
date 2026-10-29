@@ -20,7 +20,7 @@ This repository contains the Part 1 system design, Part 2 webpage summarizer, an
 
 - `src/document_agent/`: Part 3 document question-answering agent with session memory and an optional calculator tool.
 
-## Part 2 Setup
+## Setup
 
 Requirements:
 
@@ -28,25 +28,34 @@ Requirements:
 - Chromium through Playwright if you want to test JavaScript-rendered pages
 
 ### 1. Clone the Repository
+
 ```powershell
 git clone https://github.com/yapyk0328-design/agentic-architect-challenge.git
 cd agentic-architect-challenge
 ```
-Create and activate a virtual environment, then install the project:
 
-```bash
-python -m venv .venv
-```
-
-Windows PowerShell:
+### 2. Create a Virtual Environment
 
 ```powershell
+python -m venv .venv
 .venv\Scripts\Activate.ps1
+```
+
+### 3. Install the Project
+
+```powershell
 python -m pip install -e ".[dev,browser]"
 python -m playwright install chromium
 ```
 
-You can run offline mode immediately after installation. It needs no API key.
+The offline Part 2 mode needs no API key. Part 3 needs a Gemini API key.
+
+## Review Part 1
+
+Part 1 is a design submission, so it does not require a command to run. Review the system explanation and workflow diagram:
+
+- [`docs/part1-system-design.md`](docs/part1-system-design.md)
+- [`docs/email-agent-flowchart.png`](docs/email-agent-flowchart.png)
 
 ## Run Part 2 Offline
 

@@ -29,7 +29,7 @@ Requirements:
 
 ### 1. Clone the Repository
 ```powershell
-git clone [https://github.com/yapyk0328-design/agentic-architect-challenge.git](https://github.com/yapyk0328-design/agentic-architect-challenge.git)
+git clone https://github.com/yapyk0328-design/agentic-architect-challenge.git
 cd agentic-architect-challenge
 ```
 Create and activate a virtual environment, then install the project:
